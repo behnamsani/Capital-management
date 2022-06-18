@@ -39,7 +39,20 @@ btn.addEventListener("click", () => {
   }
 });
 
-btnClear.addEventListener("click", () => {});
+btnClear.addEventListener("click", () => {
+  console.log("btnClear");
+  allC.innerHTML="";
+  allC.value="";
+  lC.innerHTML="";
+  lC.value="";
+  rC.innerHTML="";
+  rC.value="";
+  rpC.innerHTML="";
+  rpC.value="";
+
+  result.style.display="none";
+  // location.reload();
+});
 
 function validationNumber(a) {
   if (a / 1 == a) {
