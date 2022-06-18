@@ -1,0 +1,154 @@
+@font-face {
+    font-family: iran;
+    src: url("./src/IRANSansX-Regular.woff2");
+}
+@font-face {
+    font-family: iran_B;
+    src: url("./src/IRANSansX-Bold.woff2");
+}
+*{
+    direction: rtl;
+    text-align: center;
+    font-family: iran;
+    font-size: 0.92rem;
+}
+::-webkit-input-placeholder { color: rgb(212, 212, 212); }
+
+        :-moz-placeholder { color: rgb(212, 212, 212);; }
+
+        ::-moz-placeholder { color: rgb(212, 212, 212);; }
+
+        :-ms-input-placeholder { color: rgb(212, 212, 212);; }
+input{
+    outline: none;
+    border: solid 1.4pt brown;
+    border-radius: 8px;
+    width: 130px;
+    text-align: center;
+    height: 20px;
+}
+body{
+    display:flex;
+    justify-content: center;
+}
+#origin{
+    height: auto;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#main{
+    text-align: center;
+    display: block;
+    width:330px;
+    border: solid 2px rgb(206, 70, 7);
+    border-radius: 8px;
+    margin:20px 5px;
+    padding: 20px;
+}
+#enter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    border-radius: 8px;
+
+}
+#enter span{
+    display:block;
+    text-align: center;
+    margin: 5px;
+}
+#exit{
+    display:none;
+    text-align: center;
+    margin-top: 20px;
+    direction: rtl;
+    
+}
+#exit p {
+    margin-left: 10px;
+}
+#exit h4 {
+    border:solid 1px green;
+    height:auto;
+    text-align: center;
+    border-radius: 10px;
+    padding:10px;
+}
+#riskPer{
+    margin:0;
+    font-family: iran_B;
+    font-size: 1.1rem;
+}
+#capital{
+    font-family: iran_B;
+    font-size: 1.1rem;
+}
+header{
+    display:flex;
+    justify-content: center;
+    margin:0 5px 0 0;
+    padding: 0;
+    
+}
+header h2{
+    margin:0;
+    padding:5px;
+    font-size: 1.2rem;
+}
+.btnG{
+    width:130px;
+    height:35px;
+    background:rgb(143, 7, 7);
+    color: aliceblue;
+    border:solid 1px aliceblue;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+}
+.btnG:hover{
+    background:aliceblue;
+    color: rgb(143, 7, 7);
+    border:solid 1px rgb(143, 7, 7); 
+}
+#amoozesh{
+    border-top: solid 1px rgb(122, 122, 122);
+    margin-top: 15px;
+}
+#amoozesh p{
+    background:green;
+    color:aliceblue;
+    padding:6px;
+    font-size: 0.85rem;
+    border-radius: 8px;
+}
+#amoozesh h6{
+    padding:0;
+    margin-bottom:15px;
+    margin-top: -5px;
+}
+a{
+    width:140px;
+    height:40px;
+    background:rgb(143, 7, 7);
+    color: aliceblue;
+    border:solid 1px aliceblue;
+    border-radius: 8px;
+    cursor: pointer;
+    padding:10px;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+a:hover{
+    background:aliceblue;
+    color: rgb(143, 7, 7);
+    border:solid 1px rgb(143, 7, 7); 
+}
+#btnGroupe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
