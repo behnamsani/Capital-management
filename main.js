@@ -33,6 +33,13 @@ btn.addEventListener("click", () => {
 
     if (e >= kolesarmaye) {
       capital.innerHTML = `کل سرمایه را می توانید وارد پوزیشن کنید `;
+      const text1 = document.createElement("p");
+      text1.id = "text1";
+      text1.innerHTML = `LOT ${
+        e / 100000
+      }  سایز پوزیشن به لات استاندارد در فارکس `;
+      capital.appendChild(lot);
+
     } else {
       capital.innerHTML = `$ ${e} `;
       const txt = document.createElement("p");
