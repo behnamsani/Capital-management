@@ -9,13 +9,13 @@ const result = document.querySelector("#exit");
 
 btn.addEventListener("click", () => {
   result.style.display = "block";
-  let a = parseInt(allC.value);
-  let b = parseInt(rC.value);
-  let c = parseInt(lC.value);
-  let d = parseFloat(rpC.value);
-  let e = (a * b) / (c * d);
+  let kolesarmaye = parseInt(allC.value);
+  let riskFull = parseFloat(rC.value);
+  let levrage = parseInt(lC.value);
+  let riskPosition = parseFloat(rpC.value);
+  let e = (kolesarmaye * riskFull) / (levrage * riskPosition);
   console.log(validationNumber(allC.value));
-  console.log(a);
+  console.log(kolesarmaye);
   console.log(allC.value);
   console.log(rC.value);
   if (allC.value == "" || rC.value == "" || lC.value == "" || rpC.value == "") {
@@ -33,9 +33,14 @@ btn.addEventListener("click", () => {
     const riskPer = document.createElement("p");
     riskPer.id = "riskPer";
     riskPer.innerHTML = `% ${Math.round(
-      (100 * e) / a
+      (100 * e) / kolesarmaye
     )} درصد از کل سرمایه را وارد پوزیشن کنید`;
     capital.appendChild(riskPer);
+
+    const lot = document.createElement("p");
+    lot.id = "lot";
+    lot.innerHTML = `LOT ${ e/100000 }  سایز پوزیشن به لات استاندارد در فارکس `;
+    capital.appendChild(lot);
   }
 });
 

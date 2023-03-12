@@ -122,13 +122,12 @@ header h2{
     background:green;
     color:aliceblue;
     padding:6px;
-    font-size: 0.85rem;
+    font-size: 1rem;
     border-radius: 8px;
 }
-#amoozesh h6{
-    padding:0;
-    margin-bottom:15px;
-    margin-top: -5px;
+#amoozesh div{
+    font-size: 1rem;
+    font-weight: 700;
 }
 a{
     width:140px;
