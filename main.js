@@ -52,13 +52,6 @@ btn.addEventListener("click", () => {
         (100 * e) / kolesarmaye
       )} درصد از کل سرمایه را وارد پوزیشن کنید`;
       capital.appendChild(riskPer);
-
-      const lot = document.createElement("p");
-      lot.id = "lot";
-      lot.innerHTML = `LOT ${
-        e / 100000
-      }  سایز پوزیشن به لات استاندارد در فارکس `;
-      capital.appendChild(lot);
     }
   }
 });
